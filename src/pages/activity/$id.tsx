@@ -1,10 +1,12 @@
+
 import React from 'react';
-import styles from './company.css';
+
+import styles from './$id.css';
 
 export default function() {
   return (
     <div className={styles.normal}>
-      <h1>Page company</h1>
+      <h1>Page $id</h1>
     </div>
   );
 }
