@@ -3,9 +3,9 @@ import { IConfig } from 'umi-types';
 // ref: https://umijs.org/config/
 const config: IConfig = {
   treeShaking: true,
-  ssr: true,
+  // ssr: true,
   plugins: [
-    ['@umijs/plugin-prerender', {}],
+    // ['@umijs/plugin-prerender', {}],
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
       antd: true,

@@ -81,3 +81,25 @@
   margin-left: 6px;
   margin-bottom: 4px;
 }
+.flist {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flist > div {
+  display: inline-block;
+  margin-right: 116px;
+  width: 103px;
+  margin-top: 19px;
+  text-align: center;
+}
+
+.flist > div:nth-child(6) {
+  margin-right: 0 !important;
+}
+.flist > div > img {
+  width: 103px;
+  height: 103px;
+}
+.flistTitle {
+  margin-top: 13px;
+}

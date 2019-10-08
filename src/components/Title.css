@@ -1,0 +1,21 @@
+.hight {
+  margin-top: 40px;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  font-size: 26px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(0, 159, 233, 1);
+  border-bottom: 1px solid rgba(243, 243, 243, 1);
+}
+.hight::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 120px;
+  height: 1px;
+  background: rgba(0, 159, 233, 1);
+}

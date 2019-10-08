@@ -1,17 +1,17 @@
-import serve from './request'
+import serve from './request';
 
 export function logo(params?: any) {
   return serve({
-    url: '/logo',
+    url: '/web/get?id=1',
     method: 'GET',
-    params
-  })
+    params,
+  });
 }
 
 export function carouselList(params?: any) {
   return serve({
-    url: '/carousel',
+    url: '/web/index.php',
     method: 'GET',
-    params
-  })
+    params,
+  });
 }

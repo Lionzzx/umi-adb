@@ -6,7 +6,7 @@ export default function() {
   return (
     <>
       <div style={{ fontSize: '18px', color: '#666666', marginTop: '50px' }}>
-        当前位置：首页→<span style={{ fontSize: '18px', color: '#009FE9' }}> 活动</span>
+        当前位置：首页→<span style={{ fontSize: '18px', color: '#009FE9' }}> 产品</span>
       </div>
     </>
   );

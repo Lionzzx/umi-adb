@@ -6,16 +6,13 @@
 import React, { useState } from 'react';
 import styles from './index.css';
 import leftArrow from '@/assets/arrow.png';
+import company from '@/assets/company.png';
 
 function Title(props: any) {
   return (
     <div className={styles.hight}>
       {props.title}
-      {props.hasMore ? (
-        <span className={styles.more}>
-          更多<img src={leftArrow}></img>
-        </span>
-      ) : null}
+      {props.hasMore ? <span className={styles.more}>更多<img src={leftArrow} /></span> : null}
     </div>
   );
 }
@@ -27,7 +24,7 @@ export default function() {
     <>
       <div className={styles.content}>
         <div className={styles.left}>
-          <video className={styles.video} src=""></video>
+          <video className={styles.video} src="" />
         </div>
         <div className={styles.list}>
           <div className={styles.item}>
@@ -57,11 +54,22 @@ export default function() {
         </div>
       </div>
       <div className={styles.info}>
-        <Title hasMore title="最新活动" />
-        <Title hasMore title="最新资讯" />
+        <Title hasMore={true} title="最新活动" />
+        <Title hasMore={true} title="最新资讯" />
       </div>
       <div>
         <Title title="合作企业" />
+
+        <div className={styles.flist}>
+          <div>
+            <img src={company} alt="" />
+            <div className={styles.flistTitle}>广州仁爱医院</div>
+          </div>
+          <div>
+            <img src={company} alt="" />
+            <div className={styles.flistTitle}>广州仁爱医院</div>
+          </div>
+        </div>
       </div>
     </>
   );
